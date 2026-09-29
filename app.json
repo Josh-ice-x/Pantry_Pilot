@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "PantryPilot",
+    "slug": "pantrypilot",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FDF6EC"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.pantrypilot",
+      "infoPlist": {
+        "NSCameraUsageDescription": "PantryPilot needs your camera to snap a photo of your fridge or pantry.",
+        "NSPhotoLibraryUsageDescription": "PantryPilot needs access to your photos so you can pick a pantry photo."
+      }
+    },
+    "android": {
+      "package": "com.yourname.pantrypilot",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": ["expo-image-picker"]
+  }
+}
